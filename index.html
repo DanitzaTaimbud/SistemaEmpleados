@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap/css/mdb.min.css">
+    <title>Formulario de Empleado</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Formulario de Empleado</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="form-outline mb-4">
+                <input type="text" id="nombre" class="form-control" required>
+                <label class="form-label" for="nombre">Nombre</label>
+              </div>
+              <div class="form-outline mb-4">
+                <input type="text" id="apellido" class="form-control" required>
+                <label class="form-label" for="apellido">Apellido</label>
+              </div>
+              <div class="form-outline mb-4">
+                <label class="form-label" for="sexo">Sexo</label>
+                <select class="form-select" id="sexo" required>  
+                  <option value="" disabled selected>Seleccionar sexo</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="femenino">Femenino</option>
+                </select>
+                
+              </div>
+              <div class="form-outline mb-4">
+                <input type="date" id="edad" class="form-control" required>
+                <label class="form-label" for="edad">Fecha de nacimiento</label>
+              </div>
+              
+              <div class="form-outline mb-4">
+                <input type="date" id="fechaIngreso" class="form-control" required>
+                <label class="form-label" for="fechaIngreso">Fecha de Ingreso</label>
+              </div>
+              <div class="form-outline mb-4">
+                <input type="number" id="salario" class="form-control" required>
+                <label class="form-label" for="salario">Salario</label>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                      <button class="btn btn-primary" type="button" onclick="modificarSalario()">Modificar Salario</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="row mt-4">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary" type="button" onclick="calcularEdad()">Calcular Edad</button>
+                         <input type="number" id="edad" class="form-control" readonly>
+                        <label class="form-label" for="prestaciones">Edad</label>   
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                <div class="col-md-12">
+                    <button class="btn btn-primary" type="button" onclick="calcularAntiguedad()">Calcular Antigüedad</button>
+                    <input type="number" id="antiguedad" class="form-control" readonly>
+                    <label class="form-label" for="antiguedad">Antigüedad</label>
+                    </div>
+                </div>   
+                
+              
+              <div class="row mt-4">
+                <div class="col-md-12">
+                  <button class="btn btn-primary" type="button" onclick="calcularPrestaciones()">Calcular Prestaciones</button>
+                  <input type="number" id="prestaciones" class="form-control" readonly>
+                  <label class="form-label" for="prestaciones">Prestaciones</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            
+          </div>
+        </div>
+      </div>
+      <!-- Agregar los enlaces a los archivos JS de MDBootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/mdbootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mdbootstrap/js/mdb.min.js"></script>
+      <script>
+        function calcularEdad() {
+          // Código para calcular la edad
+        }
+        
+        function calcularAntiguedad() {
+          // Código para calcular la antigüedad
+        }
+        
+        function calcularPrestaciones() {
+          // Código para calcular las prestaciones
+        }
+        
+        function modificarSalario() {
+          // Código para modificar el salario
+        }
+      </script>
+</body>
+</html>
